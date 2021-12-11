@@ -1,0 +1,100 @@
+/*Sass variables:*/
+$bg-color: #ffff;
+$color: #191970;
+$color2: #078EDE;
+$font-stack: Arial, Helvetica, sans-serif;
+
+/*Sass mixin:*/
+@mixin header {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* All pages have different background image*/
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2016/10/17/14/31/background-1747777_960_720.jpg");
+    font-family: $font-stack;
+}
+
+.about-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2016/09/05/15/07/concrete-1646788_960_720.jpg");
+}
+
+.art-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2021/08/18/19/26/background-6556414_960_720.jpg");
+}
+
+.job-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2019/11/12/18/44/white-4621828_960_720.jpg");
+}
+
+/* Styles to all of the pages are here*/
+
+h1 {
+    @include header;
+}
+
+h3 {
+    @include header;
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+h2[target] {
+    margin-top: 20px;
+    text-align: center;
+    background-color: $bg-color;
+}
+
+div > h4 {
+    color: $color;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
+    &:hover{
+        color: $color2;
+    }
+}
+
+
+#kollaasi {
+    margin-left: 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 40rem;
+}
+
+img {
+    margin-top: 20px;
+    width: 20rem;
+}
+
+#color{
+    background-color: $bg-color;
+}
+
+.card {
+    margin-bottom: 30px;
+    margin-left: 0.5%;
+    display: inline-block;
+}
+
+.btn {
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
+#joblinks {
+    margin-top: 50px;
+    margin-left: 1%;
+}
+
+
+
